@@ -1,8 +1,12 @@
 {% extends "login/base.html" %}
 {% block content %}
 
-<h1>welcome</h1>
-
+<h3>Hi User</h3>
+<div>
+	{% for message in messages %}
+	<p>{{message}}</p>
+	{% endfor %}
+</div>
 
 
 {% endblock content %}
